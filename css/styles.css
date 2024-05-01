@@ -473,6 +473,65 @@ footer .socmedia-link {
   display: flex;
 }
 
+.sub-wrap {
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+}
+.sub-form {
+  display: flex;
+  gap: 24px;
+}
+.sub-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  margin-bottom: 16px;
+}
+.sub-inp {
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  width: 264px;
+  height: 40px;
+  padding-left: 16px;
+  padding-right: 16px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #fff;
+}
+
+.sub-btn {
+  border-radius: 4px;
+  border: none;
+  padding: 8px 24px;
+  min-width: 165px;
+  height: 40px;
+  background-color: #4d5ae5;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-align: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.sub-svg {
+  fill: #fff;
+}
+.sub-icon {
+}
+
 /*=================MODAL=======================*/
 
 .modal-backdrop {
@@ -488,11 +547,11 @@ footer .socmedia-link {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.is-open {
+/* .is-open {
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
-}
+} */
 .modal-window {
   position: absolute;
   top: 50%;
@@ -553,6 +612,7 @@ footer .socmedia-link {
 }
 .modal-field {
   margin-bottom: 8px;
+  /* position: relative; */
 }
 .modal-input-wrap {
   position: relative;
@@ -614,9 +674,10 @@ footer .socmedia-link {
   display: flex;
   gap: 8px;
   align-items: center;
+  position: relative;
 }
 
-/* .accept-btn span {
+.accept-btn span {
   width: 16px;
   height: 16px;
   border-radius: 2px;
@@ -632,29 +693,8 @@ footer .socmedia-link {
   border-radius: 2px;
   border: 1px solid #404bbf;
   fill: #f4f4fd;
-} */
+}
 .accept-btn a {
   text-decoration: underline;
   color: #4d5ae5;
-}
-
-.accept-btn::before {
-  width: 40px;
-  height: 22px;
-  border: 1px solid #050550;
-  border-radius: 30px;
-  margin-right: 10px;
-  transition-duration: 300ms;
-}
-
-.accept-btn::after {
-  content: "";
-  position: absolute;
-  left: 2px;
-  top: 2px;
-  width: 18px;
-  height: 18px;
-  background-color: #31d0aa;
-  border-radius: 30px;
-  transition-duration: 300ms;
 }
