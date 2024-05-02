@@ -607,31 +607,31 @@
               </svg>
             </div>
           </div>
-          <div class="modal-field">
+          <div class="modal-field modal-field-textarea">
             <label class="model-label" for="user-comment">Comment</label>
             <textarea
               name="user-comment"
               id="user-comment"
-              placeholder="Enter text"
+              placeholder="Text input"
               class="model-text"
             ></textarea>
           </div>
-          <div class="modal-field">
+          <div class="modal-field modal-field-accept">
             <input
               type="checkbox"
-              name="accept"
-              id="accept"
+              name="user-privacy"
+              id="user-privacy"
               class="accept-check visually-hidden"
               value="true"
             />
-            <label for="accept" class="accept-btn">
-              <span>
+            <label for="user-privacy" class="accept-btn">
+              <span class="accept-span">
                 <svg class="accept-icon" width="10" height="8">
                   <use href="./images/icons.svg#icon-Vector"></use>
                 </svg>
               </span>
               I accept the terms and conditions of the
-              <a href="">Privacy Policy</a></label
+              <a class="privacy-text">Privacy Policy</a></label
             >
           </div>
           <button type="submit">Send</button>

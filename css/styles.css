@@ -561,8 +561,8 @@ footer .socmedia-link {
   width: 408px;
   min-height: 584px;
   background-color: #fcfcfc;
-  /* box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
-    0 2px 1px 0 rgba(0, 0, 0, 0.2); */
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   padding: 72px 24px 24px 24px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -613,8 +613,8 @@ footer .socmedia-link {
 }
 .modal-field {
   margin-bottom: 8px;
-  /* position: relative; */
 }
+
 .modal-input-wrap {
   position: relative;
 }
@@ -641,6 +641,7 @@ footer .socmedia-link {
 .model-label {
   display: block;
   margin-bottom: 4px;
+  line-height: 1.17;
   font-size: 12px;
   letter-spacing: 0.04em;
   color: #8e8f99;
@@ -648,12 +649,24 @@ footer .socmedia-link {
 
 .form-modal-svg {
   position: absolute;
+  height: 24px;
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.modal-field-textarea {
+  margin-bottom: 16px;
+}
+.modal-field-accept {
+  margin-bottom: 24px;
+}
 .model-text {
+  font-size: 12px;
+  line-height: 117;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
   width: 100%;
   height: 120px;
   resize: none;
@@ -670,6 +683,7 @@ footer .socmedia-link {
 
 .accept-btn {
   font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: flex;
@@ -678,24 +692,27 @@ footer .socmedia-link {
   position: relative;
 }
 
-.accept-btn span {
+.accept-span {
   width: 16px;
   height: 16px;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   fill: transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.accept-check:checked + .accept-btn span {
+.accept-check:checked + .accept-span {
   background-color: #404bbf;
   border-radius: 2px;
-  border: 1px solid #404bbf;
+  border: none;
   fill: #f4f4fd;
 }
-.accept-btn a {
+.privacy-text {
   text-decoration: underline;
   color: #4d5ae5;
 }
