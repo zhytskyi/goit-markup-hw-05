@@ -652,8 +652,8 @@ footer .socmedia-link {
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
-
 .form-modal-svg {
+  height: 24px;
   position: absolute;
   left: 16px;
   top: 50%;
@@ -670,7 +670,7 @@ footer .socmedia-link {
 .model-text {
   font-weight: 400;
   font-size: 12px;
-  line-height: 117;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
   width: 100%;
@@ -719,7 +719,7 @@ footer .socmedia-link {
   margin-right: 8px;
 }
 
-.accept-check:checked + .accept-span {
+.accept-check:checked > .accept-span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
