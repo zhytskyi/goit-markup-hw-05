@@ -653,7 +653,6 @@ footer .socmedia-link {
   color: #8e8f99;
 }
 .form-modal-svg {
-  height: 24px;
   position: absolute;
   left: 16px;
   top: 50%;
@@ -719,7 +718,7 @@ footer .socmedia-link {
   margin-right: 8px;
 }
 
-.accept-check:checked > .accept-span {
+.accept-check:checked + .accept-btn > .accept-span {
   background-color: #404bbf;
   border: none;
   fill: #f4f4fd;
