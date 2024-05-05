@@ -526,10 +526,10 @@ footer .socmedia-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
 }
 .sub-svg {
   fill: #ffffff;
+  margin-left: 16px;
 }
 
 /*=================MODAL=======================*/
